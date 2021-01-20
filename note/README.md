@@ -57,6 +57,10 @@
   "collectCoverageFrom": [ // 收集列表
     "src/**/*.{js,jsx,ts,tsx}", // 指定src 目录下的文件类型
     "!src/**/*.d.ts" // 但是不包含.d.ts文件
+    https://www.tslang.cn/docs/handbook/tsconfig-json.html
+    * 匹配0或多个字符（不包括目录分隔符）
+    ? 匹配一个任意字符（不包括目录分隔符）
+    **/ 递归匹配任意子目录
   ],
   "setupFiles": [
     "react-app-polyfill/jsdom"
