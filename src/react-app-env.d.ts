@@ -4,11 +4,19 @@
 
 
 /*
+
+react-app-env.d.ts文件是干嘛的？关于这个文件在https://www.tslang.cn/docs/handbook/declaration-files/templates.html
+意思就是该文件是上述/// <reference types="node" />三个文件的全局模板环境配置文件。
+
+
  <reference types="node" />参考链接：https://www.tslang.cn/docs/handbook/triple-slash-directives.html
  reference[ˈrefrəns] v & n.参考、涉及;
  declare [dɪˈkler] v.宣布;
  interface[ˈɪntərfeɪs] n.接口;v.连接;
-
+ 
+ 表明这个文件使用了node_modules目录下的@types/node/index.d.ts里面声明的名字； 
+ 并且，这个包需要在编译阶段与声明文件一起被包含进来
+ 仅当在你需要写一个d.ts文件时才使用这个指令。
 */ 
 
 
